@@ -28,7 +28,6 @@ const Login = (props) => {
   // useEffect(() => {
   //   const handler = setTimeout(() => setFormIsValid(enteredEmail.includes('@') && enteredPassword.trim().length > 6), 500)
   //   return () => {
-  //     console.log('clean up')
   //     clearTimeout(handler);
   //   };
   // }, [enteredEmail, enteredPassword])
