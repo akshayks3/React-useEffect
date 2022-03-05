@@ -25,13 +25,6 @@ const Login = (props) => {
 
   const [emailState, dispatchEmail] = useReducer(emailReducer, { value: '', iSValid: false })
 
-  // useEffect(() => {
-  //   const handler = setTimeout(() => setFormIsValid(enteredEmail.includes('@') && enteredPassword.trim().length > 6), 500)
-  //   return () => {
-  //     clearTimeout(handler);
-  //   };
-  // }, [enteredEmail, enteredPassword])
-
   const emailChangeHandler = (event) => {
     dispatchEmail({ type: 'USER_INPUT', val: event.target.value })
 
