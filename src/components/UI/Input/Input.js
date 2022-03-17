@@ -9,6 +9,7 @@ const Input = React.forwardRef((props, ref) => {
         inputRef.current.focus();
     }
 
+    // This is used to only allow certain properties to be exposed
     useImperativeHandle(ref, () => {
         return {
             focus: activate
